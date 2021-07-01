@@ -20,7 +20,7 @@
 ```
 ./generate_certs.sh /C=UA/ST=Kyiv/O=Localhost-Certificates/CN=localhost.local
 ```
-4. Import <strong>RootCA.crt</strong> to <strong>chrome://settings/certificates?search=https</strong> in tab <strong>Authorities</strong>
+4. Import <strong>RootCA.crt</strong> in <strong>chrome://settings/security</strong> -> <strong>Manage certificates</strong>
 5. In order to re-generate (domains has been added or removed) certificate for domain name follow step 3.
 
 ### WARNING! ONLY DEVELOPMENT USE!
