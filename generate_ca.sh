@@ -9,7 +9,7 @@ else
   SUBJECT=$1
 fi
 
-openssl req -x509 -nodes -new -sha256 -days 1024 -newkey rsa:2048 \
+openssl req -x509 -nodes -new -sha256 -days 365 -newkey rsa:2048 \
   -keyout "$PWD"/certs/RootCA.key \
   -out "$PWD"/certs/RootCA.pem \
   -subj "$SUBJECT"

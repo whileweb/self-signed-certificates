@@ -14,7 +14,7 @@ openssl req -new -nodes -newkey rsa:2048 \
   -out "$PWD"/certs/localhost.csr \
   -subj "$SUBJECT"
 
-openssl x509 -req -sha256 -days 1024 \
+openssl x509 -req -sha256 -days 365 \
   -in "$PWD"/certs/localhost.csr \
   -CA "$PWD"/certs/RootCA.pem \
   -CAkey "$PWD"/certs/RootCA.key -CAcreateserial \
